@@ -105,6 +105,28 @@
   }
   .invite-eyebrow::after{background:linear-gradient(90deg,var(--gold),transparent)}
   .names-block{position:relative;padding:22px 34px;margin:6px 0}
+
+  /* ===== families ===== */
+  .families{margin:2px 0 4px;max-width:560px}
+  .fam-row{
+    font-family:'Gulzar','El Messiri',serif;
+    font-size:clamp(1.05rem,4vw,1.35rem);
+    color:var(--gold-light);line-height:2.4;
+    letter-spacing:.01em;
+  }
+  .fam-dot{
+    color:var(--gold);font-size:.55em;
+    vertical-align:middle;margin:0 14px;opacity:.85;
+  }
+  .fam-and{
+    font-family:'Gulzar','El Messiri',serif;
+    color:var(--gold);font-size:1.05rem;line-height:2;
+    opacity:.9;margin:2px 0;
+  }
+  .fam-invite{
+    color:var(--muted);font-size:.92rem;letter-spacing:.14em;
+    margin-top:14px;
+  }
   /* ornate corner brackets */
   .names-block::before,.names-block::after{
     content:"";position:absolute;width:44px;height:44px;
@@ -418,8 +440,9 @@
   .closing-sep::before{right:28%}
   .closing-sep::after{left:28%}
   .closing-sig{
-    display:flex;align-items:center;justify-content:center;gap:16px;
-    font-weight:800;font-size:1.6rem;color:var(--gold-light);
+    display:flex;align-items:center;justify-content:center;gap:18px;
+    font-family:'Gulzar','El Messiri',serif;font-weight:400;
+    font-size:1.9rem;line-height:2.2;color:var(--gold-light);
   }
   .beat-heart{
     width:1.05em;height:1.05em;fill:var(--gold);
@@ -514,6 +537,13 @@
     <div class="invite-eyebrow fx">دعوة زفاف</div>
     <div id="guestHero" class="guest-hero fx"></div>
 
+    <div class="families fx">
+      <div class="fam-row">آل احمد ابراهيم محمد <span class="fam-dot">✦</span> آل الشريف محمد صالح</div>
+      <div class="fam-and">و</div>
+      <div class="fam-row">آل احمد سليم حماد <span class="fam-dot">✦</span> آل عثمان حميدان</div>
+      <div class="fam-invite">يتشرفون بدعوتكم لحضور حفل زفاف</div>
+    </div>
+
     <div class="names-block fx">
       <span class="tw tw1">✦</span><span class="tw tw2">✧</span>
       <span class="tw tw3">✦</span><span class="tw tw4">✧</span>
@@ -523,7 +553,7 @@
         <circle cx="6" cy="10" r="1.6" fill="currentColor"/>
         <circle cx="214" cy="10" r="1.6" fill="currentColor"/>
       </svg>
-      <h1 class="names">عبدالرحمن ابراهيم احمد</h1>
+      <h1 class="names">عبدالرحمن ابراهيم</h1>
       <div class="names-divider">
         <span class="nd-line"></span>
         <svg class="nd-rings" viewBox="0 0 44 26" aria-hidden="true">
@@ -533,7 +563,7 @@
         </svg>
         <span class="nd-line"></span>
       </div>
-      <h1 class="names">نفيسة نعيم احمد سليم</h1>
+      <h1 class="names">نفيسة نعيم</h1>
       <svg class="flourish flip" viewBox="0 0 220 20" aria-hidden="true">
         <path d="M6 10 Q40 2 70 10 T110 10 T150 10 T214 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
         <circle cx="110" cy="10" r="2.6" fill="currentColor"/>
