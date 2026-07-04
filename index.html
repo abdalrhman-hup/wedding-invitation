@@ -361,8 +361,16 @@
   }
   #envelope.open .env-seal{transform:translate(-50%,-50%) scale(.2) rotate(40deg);opacity:0}
   .env-title{
-    font-family:'Almarai',sans-serif;font-weight:800;
-    font-size:1.35rem;color:var(--gold-light);letter-spacing:.04em;text-align:center;
+    font-family:'Almarai',sans-serif;font-weight:400;
+    font-size:1.05rem;color:var(--muted);letter-spacing:.22em;text-align:center;
+  }
+  .env-names{
+    display:block;margin-top:10px;
+    font-family:'Gulzar','El Messiri',serif;font-weight:400;
+    font-size:2.1rem;line-height:2.1;letter-spacing:0;
+    background:linear-gradient(180deg,#f7e7b6 0%,var(--gold-light) 38%,var(--gold) 78%,#a8823a 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 4px 18px rgba(201,162,75,.35));
   }
   .env-sub{color:var(--muted);font-size:.95rem;margin-top:-24px}
   #openBtn{min-width:220px}
@@ -502,7 +510,7 @@
 
 <!-- ================= ENVELOPE INTRO ================= -->
 <div id="envelope">
-  <div class="env-title">دعوة زفاف<br>عبدالرحمن و نفيسة</div>
+  <div class="env-title">دعوة زفاف<br><span class="env-names">عبدالرحمن و نفيسة</span></div>
   <div id="guestBadge" class="env-guest"></div>
   <div class="env">
     <div class="env-flap"></div>
