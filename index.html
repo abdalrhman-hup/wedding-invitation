@@ -251,6 +251,14 @@
   .venue{font-size:1.5rem;color:var(--gold-light);font-weight:600}
   .detail-line{color:var(--cream);font-size:1.08rem;margin-bottom:6px}
   .detail-highlight{color:var(--gold-light)}
+  .time-range{
+    display:inline-flex;align-items:center;gap:10px;
+    margin-top:16px;padding:10px 26px;border-radius:50rem;
+    border:1px solid var(--gold-dim);background:rgba(201,162,75,.08);
+    color:var(--cream);font-size:1.05rem;
+  }
+  .time-range b{color:var(--gold-light);font-weight:700}
+  .tr-clock{font-size:1.15rem}
   .detail-icon{
     width:52px;height:52px;margin:0 auto 20px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;
@@ -672,6 +680,10 @@
           <div class="detail-line">الجمعة ٧ أغسطس ٢٠٢٦ <span id="hijriDetail" style="color:var(--muted);font-size:.92rem"></span></div>
           <div class="detail-line detail-highlight">تُقام مراسم عقد القِران بعد صلاة المغرب</div>
           <div class="detail-line">يعقبها تناول وجبة العشاء وحفل الزفاف</div>
+          <div class="time-range">
+            <span class="tr-clock">🕗</span>
+            <span>من <b>٨:٠٠ مساءً</b> حتى <b>١:٠٠ صباحاً</b></span>
+          </div>
 
           <div class="d-grid gap-3 mt-4" style="max-width:340px;margin:0 auto">
             <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=30.0516889,31.3258202&query_place_id=ChIJ84DR5tA_WBQRL_jEDTz4QZw" target="_blank" rel="noopener">
